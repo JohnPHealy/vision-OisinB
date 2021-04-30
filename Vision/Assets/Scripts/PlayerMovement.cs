@@ -1,8 +1,8 @@
-﻿using System;
-using System.Collections;
+﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
+using UnityEngine.Events;
 
 public class PlayerMovement : MonoBehaviour
 {
@@ -11,10 +11,10 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] private LayerMask groundLayers;
 
     private float moveDir;
-    private Rigidbody2D myRB;
+    public Rigidbody2D myRB;
     private bool canJump;
 
-    private void Start()
+    public void Start()
     {
         myRB = GetComponent<Rigidbody2D>();
     }
@@ -36,7 +36,6 @@ public class PlayerMovement : MonoBehaviour
         {
             canJump = false;
         }
-
     }
 
     public void Move(InputAction.CallbackContext context)
@@ -50,6 +49,11 @@ public class PlayerMovement : MonoBehaviour
         {
             myRB.AddForce(Vector3.up * jumpForce, ForceMode2D.Impulse);
             canJump = false;
+        }
+
+        if (context.canceled)
+        {
+            myRB.velocity = new Vector2(myRB.velocity.x, 0f);
         }
     }
 }
