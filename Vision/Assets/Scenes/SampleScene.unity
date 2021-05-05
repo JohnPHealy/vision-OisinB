@@ -6581,6 +6581,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Character
       objectReference: {fileID: 0}
+    - target: {fileID: 3768596618898936117, guid: 23071242f89ede24694433284cddd70c, type: 3}
+      propertyPath: m_BodyType
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3768596618898936117, guid: 23071242f89ede24694433284cddd70c, type: 3}
+      propertyPath: m_Constraints
+      value: 4
+      objectReference: {fileID: 0}
     - target: {fileID: 3768596618898936119, guid: 23071242f89ede24694433284cddd70c, type: 3}
       propertyPath: m_RootOrder
       value: 1

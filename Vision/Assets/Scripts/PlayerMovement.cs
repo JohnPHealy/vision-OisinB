@@ -42,10 +42,14 @@ public class PlayerMovement : MonoBehaviour
     public void Move(InputAction.CallbackContext context)
     {
         moveDir = context.ReadValue<float>();
+        print(context.ReadValue<float>());
     }
 
     public void Jump(InputAction.CallbackContext context)
     {
+
+        print(context.ReadValue<bool>());
+
         if (canJump)
         {
             myRB.AddForce(Vector3.up * jumpForce, ForceMode2D.Impulse);
