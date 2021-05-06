@@ -527,7 +527,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 519420028}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 10.4, y: 3, z: -75.83252}
+  m_LocalPosition: {x: 10.4, y: 2.59, z: -75.83252}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -4338,7 +4338,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &1021334247
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4523,7 +4523,7 @@ BoxCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 35.538765, y: -0.692312}
@@ -4613,12 +4613,42 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1260318200}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 10.4, y: 3, z: -75.83252}
+  m_LocalPosition: {x: 10.4, y: 2.59, z: -75.83252}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 445899096}
   m_Father: {fileID: 0}
   m_RootOrder: 5
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1435775900
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1435775901}
+  m_Layer: 0
+  m_Name: respawnPoint
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1435775901
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1435775900}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 3, y: 2, z: -5}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 13
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1543722211
 GameObject:
@@ -4921,8 +4951,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1812266992}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 17.818666, y: 33.59, z: -2.496969}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: 9.8351, y: 25.597, z: -2.496969}
+  m_LocalScale: {x: 1.275, y: 1.6875, z: 1}
   m_Children:
   - {fileID: 855966737}
   m_Father: {fileID: 0}
@@ -6687,12 +6717,20 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3768596618898936117, guid: 23071242f89ede24694433284cddd70c, type: 3}
+      propertyPath: m_Mass
+      value: 0.8200428
+      objectReference: {fileID: 0}
+    - target: {fileID: 3768596618898936117, guid: 23071242f89ede24694433284cddd70c, type: 3}
       propertyPath: m_BodyType
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3768596618898936117, guid: 23071242f89ede24694433284cddd70c, type: 3}
       propertyPath: m_Constraints
       value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 3768596618898936117, guid: 23071242f89ede24694433284cddd70c, type: 3}
+      propertyPath: m_UseAutoMass
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3768596618898936117, guid: 23071242f89ede24694433284cddd70c, type: 3}
       propertyPath: m_GravityScale
@@ -6824,15 +6862,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3768596618898936119, guid: 23071242f89ede24694433284cddd70c, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 2.65
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 3768596618898936119, guid: 23071242f89ede24694433284cddd70c, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1.7
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 3768596618898936119, guid: 23071242f89ede24694433284cddd70c, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -5.2162347
+      value: -5
       objectReference: {fileID: 0}
     - target: {fileID: 3768596618898936119, guid: 23071242f89ede24694433284cddd70c, type: 3}
       propertyPath: m_LocalRotation.w
